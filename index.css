@@ -55,6 +55,7 @@ header {
 
 .social-link i:hover,
 .social-link i:focus {
+  cursor: pointer;
   transform: scale(1.2);
 }
 
