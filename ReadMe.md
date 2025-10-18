@@ -43,3 +43,4 @@ An accessible and responsive profile card displying a user's basic information, 
 3. Open with Live Server by right clicking on index.html
 
 ## Demo
+Hosted on Netlify: https://ibokc-profile-card.netlify.app/
