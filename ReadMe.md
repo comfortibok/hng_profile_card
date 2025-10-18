@@ -1,6 +1,6 @@
 # Profile Card
 
-An accessible and responsive profile card displying a user's basic information, such as -
+An accessible and responsive profile card displying a user's basic information, such as:
 
 - Name
 - Avatar
@@ -18,7 +18,7 @@ An accessible and responsive profile card displying a user's basic information, 
 
 ## Features
 
-- fully responsive design
+- Fully responsive design
 - Semantic and accessible HTML structure
 - Modern CSS layout using Flexbox and Grid
 - Accessible avatar with descriptive alt text
