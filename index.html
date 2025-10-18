@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Roboto-Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>ibok cee-profile card</title>
+</head>
+
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+
+        <header aria-labelledby="profile-card-title">
+            <h2 data-testid="test-user-name" id="profile-card-title">Ibok Comfort</h2>
+            <!-- Time -->
+            <p class="user-time">Current time: <time data-testid="test-user-time" id="user-time"></time> ms</p>
+            <!-- Image -->
+            <figure class="user-avatar">
+                <img src="/user-avatar.jpg" alt="An image of Ibok Comfort" data-testid="test-user-avatar">
+            </figure>
+            <!-- Social media links -->
+            <nav aria-label="Social media links">
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li><a class="social-link" href="https://github.com/comfortibok" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="Github"><i
+                                class="fa-brands fa-github" style="color: rgb(24, 23, 23)" aria-hidden="true"></i></a>
+                    </li>
+                    <li> <a class="social-link" href="mailto:ibokcomfort93@gmail.com" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-gmail" aria-label="Gmail"><i
+                                class="fa-brands fa-google" style="color: rgb(234, 67, 53)" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a class="social-link" href="https://www.linkedin.com/in/comfort-ibok-a43042164" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-linkedIn" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin" style="color: rgb(10, 102, 194)" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Bio section -->
+        <section class="bio-section" aria-labelledby="bio-heading">
+            <h3 id="bio-heading">Bio</h3>
+            <p data-testid="test-user-bio" class="user-bio">Hello there👋! I am a frontend developer 👩‍💻 with a unique
+                background in Genetics 🧬
+                and
+                Environmental Toxicology and Pollution Management 🌍, passionate about building innovative,
+                accessible and dynamic web applications. I am committed to continuously honing my technical skills to
+                meet emerging needs
+                and also staying updated with the latest frontend technologies and trend. </p>
+        </section>
+
+        <!-- Hobbies section -->
+        <section class="hobbies-section" aria-labelledby="hobbies-heading">
+            <h3 id="hobbies-heading">Hobbies</h3>
+            <ul class="hobbies-list" data-testid="test-user-hobbies">
+                <li class="hobby" data-testid="test-user-reading">Reading</li>
+                <li class="hobby" data-testid="test-user-travelling">Travelling</li>
+                <li class="hobby" data-testid="test-user-watching-movies">Watching movies </li>
+                <li class="hobby" data-testid="test-user-listening-music">Listening music </li>
+            </ul>
+        </section>
+
+        <!-- Dislike section -->
+        <section class="dislikes-section" aria-labelledby="dislikes-heading">
+            <h3 id="dislikes-heading">Dislikes</h3>
+            <ul class="dislikes-list" data-testid="test-user-dislikes">
+                <li class="dislike" data-testid="test-user-lies">Lies</li>
+                <li class="dislike" data-testid="test-user-dirt">Dirt</li>
+                <li class="dislike" data-testid="test-user-lateness">Lateness</li>
+                <li class="dislike" data-testid="test-user-bugs">Bugs</li>
+            </ul>
+        </section>
+
+    </article>
+
+    <!-- Javascript -->
+    <script src="/index.js">  </script>
+</body>
+
+</html>
