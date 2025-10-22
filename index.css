@@ -79,10 +79,6 @@ section {
   margin-block-start: 2.5em;
 }
 
-.bio-section{
-  margin-block-start: 0;
-}
-
 .hobbies-section,
 .dislikes-section {
   padding: 1em 0.6em;
@@ -186,13 +182,17 @@ section {
     align-items: center;
     justify-content: center;
   }
+  
+  .bio-section {
+    margin-block-start: 0;
+  }
 }
 
 @media (min-width: 900px) {
   .profile-card {
     padding: 1.7em;
   }
-  
+
   .user-avatar {
     width: 250px;
     height: 250px;
