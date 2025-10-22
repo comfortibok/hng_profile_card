@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+
+    <title>Contact Us - Ibok Comfort</title>
+</head>
+
+<body>
+    <main class="contact-main" aria-labelledby="contact-page-title" data-testid="test-contact-page">
+
+        <!-- Header section -->
+        <header class="header" data-testid="test-header">
+            <button class="nav-toggle" aria-label="Menu button" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="header-nav" aria-label="Main navigation">
+                <button class="nav-toggle" aria-label="Exit button" id="exit-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="header-links" data-testid="test-links">
+                    <li>
+                        <a class="header-link" href="/index.html" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-link-profile">Profile</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="/src/about.html" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-link-about">About</a>
+                    </li>
+                    <li>
+                        <a class="header-link current-page" href="/src/contact.html" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-link-contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <h3 class="contact-page-title" id="contact-page-title">Contact Us</h3>
+
+        <!-- Contact form -->
+        <form id="contact-form" novalidate data-testid="test-contact-form">
+
+            <!-- Name input section -->
+            <section class="form-input">
+                <label for="name">Full Name</label>
+                <section class="input-wrap">
+                    <input type="text" id="name" placeholder="Enter full name" data-testid="test-contact-name"
+                        aria-describedby="test-contact-error-name" />
+                    <span id="test-contact-error-name" class="error-message" aria-live="polite" hidden></span>
+                </section>
+            </section>
+
+            <!-- Email input section -->
+            <section class="form-input">
+                <label for="email">Email</label>
+                <section class="input-wrap">
+                    <input type="email" id="email" placeholder="Enter email" data-testid="test-contact-email"
+                        aria-describedby="test-contact-error-email" />
+                    <span id="test-contact-error-email" class="error-message" aria-live="polite" hidden></span>
+                </section>
+            </section>
+
+            <!-- Subject input section -->
+            <section class="form-input">
+                <label for="subject">Subject</label>
+                <section class="input-wrap">
+                    <input type="text" id="subject" placeholder="Subject" data-testid="test-contact-subject"
+                        aria-describedby="test-contact-error-subject" />
+                    <span id="test-contact-error-subject" class="error-message" aria-live="polite" hidden></span>
+                </section>
+            </section>
+
+            <!-- Message input section -->
+            <section class="form-input">
+                <label for="message">Message</label>
+                <section class="input-wrap">
+                    <textarea id="message" placeholder="Enter message..." minlength="10"
+                        data-testid="test-contact-message" aria-describedby="test-contact-error-message"></textarea>
+                    <span id="test-contact-error-message" class="error-message" aria-live="polite" hidden></span>
+                </section>
+            </section>
+
+            <button type="submit" class="submit-btn" data-testid="test-contact-submit">Submit</button>
+
+            <!-- Success message -->
+            <p id="test-contact-success-message" data-testid="test-contact-success" class="success-message" hidden></p>
+
+        </form>
+    </main>
+
+    <!-- JavaScripts -->
+    <script src="/src/scripts/header.js"></script>
+    <script src="/src/scripts/contact.js"></script>
+</body>
+
+</html>

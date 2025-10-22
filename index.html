@@ -2,49 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font awesome CDN -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Roboto-Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
-    <title>ibok cee-profile card</title>
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Ibok Cee - Profile Card</title>
 </head>
 
 <body>
     <article class="profile-card" data-testid="test-profile-card">
 
+        <!-- Header section -->
         <header aria-labelledby="profile-card-title">
             <h2 data-testid="test-user-name" id="profile-card-title">Ibok Comfort</h2>
+
             <!-- Time -->
-            <p class="user-time">Current time: <time data-testid="test-user-time" id="user-time"></time> ms</p>
+            <p class="user-time">
+                Current time:
+                <time data-testid="test-user-time" id="user-time"></time>
+            </p>
+
             <!-- Image -->
             <figure class="user-avatar">
-                <img src="/user-avatar.jpg" alt="An image of Ibok Comfort" data-testid="test-user-avatar">
+                <img src="/user-avatar.jpg" alt="An image of Ibok Comfort" data-testid="test-user-avatar" />
             </figure>
+
             <!-- Social media links -->
             <nav aria-label="Social media links">
                 <ul class="social-links" data-testid="test-user-social-links">
-                    <li><a class="social-link" href="https://github.com/comfortibok" target="_blank"
-                            rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="Github"><i
-                                class="fa-brands fa-github" style="color: rgb(24, 23, 23)" aria-hidden="true"></i></a>
+                    <li>
+                        <a class="social-link" href="https://github.com/comfortibok" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="GitHub">
+                            <i class="fa-brands fa-github" style="color: rgb(24, 23, 23);" aria-hidden="true"></i>
+                        </a>
                     </li>
-                    <li> <a class="social-link" href="mailto:ibokcomfort93@gmail.com" target="_blank"
-                            rel="noopener noreferrer" data-testid="test-user-social-gmail" aria-label="Gmail"><i
-                                class="fa-brands fa-google" style="color: rgb(234, 67, 53)" aria-hidden="true"></i></a>
+                    <li>
+                        <a class="social-link" href="mailto:ibokcomfort93@gmail.com" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-gmail" aria-label="Gmail">
+                            <i class="fa-brands fa-google" style="color: rgb(234, 67, 53);" aria-hidden="true"></i>
+                        </a>
                     </li>
-                    <li><a class="social-link" href="https://www.linkedin.com/in/comfort-ibok-a43042164" target="_blank"
-                            rel="noopener noreferrer" data-testid="test-user-social-linkedIn" aria-label="LinkedIn"><i
-                                class="fa-brands fa-linkedin" style="color: rgb(10, 102, 194)" aria-hidden="true"></i>
+                    <li>
+                        <a class="social-link" href="https://www.linkedin.com/in/comfort-ibok-a43042164" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin" style="color: rgb(10, 102, 194);" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -54,13 +69,15 @@
         <!-- Bio section -->
         <section class="bio-section" aria-labelledby="bio-heading">
             <h3 id="bio-heading">Bio</h3>
-            <p data-testid="test-user-bio" class="user-bio">Hello there👋! I am a frontend developer 👩‍💻 with a unique
-                background in Genetics 🧬
-                and
-                Environmental Toxicology and Pollution Management 🌍, passionate about building innovative,
-                accessible and dynamic web applications. I am committed to continuously honing my technical skills to
-                meet emerging needs
-                and also staying updated with the latest frontend technologies and trend. </p>
+            <p data-testid="test-user-bio" class="user-bio">
+                Hello there 👋! I am a frontend developer 👩‍💻 with a unique background in Genetics 🧬 and
+                Environmental
+                Toxicology and Pollution Management 🌍, passionate about building innovative, accessible, and dynamic
+                web
+                applications. I am committed to continuously honing my technical skills to meet emerging needs and
+                staying
+                updated with the latest frontend technologies and trends.
+            </p>
         </section>
 
         <!-- Hobbies section -->
@@ -69,12 +86,12 @@
             <ul class="hobbies-list" data-testid="test-user-hobbies">
                 <li class="hobby" data-testid="test-user-reading">Reading</li>
                 <li class="hobby" data-testid="test-user-travelling">Travelling</li>
-                <li class="hobby" data-testid="test-user-watching-movies">Watching movies </li>
-                <li class="hobby" data-testid="test-user-listening-music">Listening music </li>
+                <li class="hobby" data-testid="test-user-watching-movies">Watching movies</li>
+                <li class="hobby" data-testid="test-user-listening-music">Listening to music</li>
             </ul>
         </section>
 
-        <!-- Dislike section -->
+        <!-- Dislikes section -->
         <section class="dislikes-section" aria-labelledby="dislikes-heading">
             <h3 id="dislikes-heading">Dislikes</h3>
             <ul class="dislikes-list" data-testid="test-user-dislikes">
@@ -85,10 +102,18 @@
             </ul>
         </section>
 
+        <!-- Next page link -->
+        <a role="button" class="next-link" href="/src/about.html" target="_blank" rel="noopener noreferrer"
+            aria-label="Go to about page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                    d="M544 160C561.7 160 576 174.3 576 192C576 209.7 561.7 224 544 224L336 224L336 160L544 160zM384 352C401.7 352 416 366.3 416 384C416 401.7 401.7 416 384 416L320 416C302.3 416 288 401.7 288 384C288 366.3 302.3 352 320 352L384 352zM448 288C448 305.7 433.7 320 416 320L368 320C350.3 320 336 305.7 336 288C336 270.3 350.3 256 368 256L416 256C433.7 256 448 270.3 448 288zM352 448C369.7 448 384 462.3 384 480C384 497.7 369.7 512 352 512L288 512C270.3 512 256 497.7 256 480C256 462.3 270.3 448 288 448L352 448zM264 352L264.6 352C259.2 361.4 256 372.3 256 384C256 397.2 260 409.4 266.8 419.6C241.9 428.3 224 452.1 224 480C224 491.7 227.1 502.6 232.6 512L224 512C135.6 512 64 440.4 64 352L64 290.3C64 247.9 80.9 207.2 110.9 177.2L122.5 165.6C146.5 141.5 179.1 128 213 128L240 128C275.3 128 304 156.7 304 192L304 280C304 302.1 286.1 320 264 320C241.9 320 224 302.1 224 280L224 224C224 215.2 216.8 208 208 208C199.2 208 192 215.2 192 224L192 280C192 319.8 224.2 352 264 352z" />
+            </svg>
+        </a>
     </article>
 
-    <!-- Javascript -->
-    <script src="/index.js">  </script>
+    <!-- JavaScript -->
+    <script src="/index.js"></script>
 </body>
 
 </html>

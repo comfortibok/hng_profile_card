@@ -4,11 +4,13 @@ An accessible and responsive profile card displying a user's basic information, 
 
 - Name
 - Avatar
-- Timestamp in milliseconds
+- Real-time timestamp (in milliseconds)
 - Social media links
 - Bio
 - Hobbies
 - Dislikes
+- About page
+- Contact form
 
 ## Tools Used
 
@@ -21,10 +23,13 @@ An accessible and responsive profile card displying a user's basic information, 
 - Fully responsive design
 - Semantic and accessible HTML structure
 - Modern CSS layout using Flexbox and Grid
-- Accessible avatar with descriptive alt text
-- Dynamic timestaamp that updates in real time in milliseconds
+- Accessible avatar with descriptive alt text, labels and ARIA associations
+- Dynamic timestaamp that updates in real-time in milliseconds
 - Interactive and keyboard-focusable social links
-- Elements include data-testid attributes for automated testing
+- All elements and required fields include data-testid attributes for automated testing
+- Success message displayed upon valid form submission
+- Error message to indicate incomplete or invalid input
+- Real-time form validation
 
 ## How to run locally
 
@@ -43,4 +48,5 @@ An accessible and responsive profile card displying a user's basic information, 
 3. Open with Live Server by right clicking on index.html
 
 ## Demo
+
 Hosted on Netlify: https://ibokc-profile-card.netlify.app/

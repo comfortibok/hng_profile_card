@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/app.css" />
+
+    <title>About Me - Ibok Comfort</title>
+</head>
+
+<body>
+
+    <main class="about-page" data-testid="test-about-page">
+
+        <!-- Header section -->
+        <header class="header" data-testid="test-header">
+            <button class="nav-toggle" aria-label="Menu button" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="header-nav" aria-label="Main navigation">
+                <button class="nav-toggle" aria-label="Exit button" id="exit-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="header-links" data-testid="test-links">
+                    <li>
+                        <a class="header-link" href="/index.html" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-link-profile">Profile</a>
+                    </li>
+                    <li>
+                        <a class="header-link current-page" href="/src/about.html" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-link-about">About</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="/src/contact.html" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-link-contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Bio section -->
+        <section class="about-page-section bio-section" aria-labelledby="bio-title">
+            <h3 id="bio-title">Bio</h3>
+            <p data-testid="test-about-bio">
+                My name is Ibok Comfort, born in Lagos State, Nigeria, and I hail from Akwa Ibom State in the southern
+                region of
+                the country. I hold a Bachelor of Science (B.Sc.) degree in Cell Biology and Genetics and a Master of
+                Science
+                (M.Sc.) in Environmental Toxicology and Pollution Management, both from the University of Lagos,
+                Nigeria.
+            </p>
+        </section>
+
+        <!-- Goals section -->
+        <section class="about-page-section" aria-labelledby="goals-title">
+            <h3 id="goals-title">Goals</h3>
+            <p data-testid="test-about-goals">
+                I aim to stay updated with the latest frontend technologies and continuously hone my technical skills to
+                meet
+                emerging needs. I aspire to contribute significantly to the field of frontend engineering by applying my
+                technical expertise while leveraging my background in environmental toxicology and pollution management
+                to drive
+                environmental awareness and sustainability. Furthermore, I aim to develop front-end interfaces for tools
+                that
+                monitor environmental data, such as air and water quality.
+            </p>
+        </section>
+
+        <!-- Areas of confidence section -->
+        <section class="about-page-section" aria-labelledby="confidence-title">
+            <h3 id="confidence-title">Areas of Low Confidence</h3>
+            <ul class="confidence-list" data-testid="test-about-confidence">
+                <li class="confidence" data-testid="test-about-confidence-performance">Performance</li>
+                <li class="confidence" data-testid="test-about-confidence-optimization">Optimization</li>
+            </ul>
+        </section>
+
+        <!-- Note section -->
+        <section class="about-page-section" aria-labelledby="note-title">
+            <h3 id="note-title">Note to Future Self</h3>
+            <blockquote data-testid="test-about-note">
+                Hey future Cee! Life must be great, and your dreams have finally come true. What are you building? Are
+                you facing
+                any challenges today? Baby girl, keep pushing forward and remember that you're stronger than you think
+                and can
+                overcome any obstacle.
+                <cite>“You've got this!” – Cee, 2025</cite>
+            </blockquote>
+        </section>
+
+        <!-- Extra Thoughts -->
+        <section class="about-page-section" aria-labelledby="extra-title">
+            <h3 id="extra-title">Extra Thoughts</h3>
+            <p data-testid="test-about-extra">
+                As I transition into the tech world filled with curiosity, I dive into each challenge as an opportunity
+                to learn,
+                unlearn, and relearn — embracing every chance to expand my knowledge. I am eager to see where my passion
+                takes
+                me.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./scripts/header.js"></script>
+
+</body>
+
+</html>

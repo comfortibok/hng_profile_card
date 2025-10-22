@@ -1,0 +1,142 @@
+.success-message,
+.contact-page-title {
+  text-align: center;
+}
+
+.success-message {
+  color: rgb(7, 84, 7);
+  margin-block-start: 2em;
+}
+
+span {
+  display: block;
+  color: rgb(237, 23, 23);
+  margin-block-start: 0.5em;
+  line-height: 1.5;
+}
+
+label {
+  margin-inline-end: auto;
+}
+
+input,
+span,
+textarea {
+  width: 100%;
+}
+
+input,
+textarea,
+.submit-btn {
+  border: 0;
+  border-radius: 6px;
+}
+
+.contact-main {
+  width: 95%;
+  margin-block: 6em 2em;
+}
+
+form {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: rgb(245, 235, 224);
+  padding: 1.5em 0.6em;
+  border-radius: 12px;
+  box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  margin-block-end: 1em;
+}
+
+.form-input:last-child {
+  margin-block-end: 0;
+}
+
+input,
+textarea {
+  padding: 1.1em;
+  color: rgb(33, 32, 32);
+  background-color: rgb(240, 215, 201);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(33, 32, 32);
+  opacity: 0.8;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid rgb(130, 101, 85);
+}
+
+textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  color: rgb(248, 243, 243);
+  background-color: rgb(130, 101, 85);
+  padding: 0.8em;
+  width: 90px;
+  transform: all 250ms ease;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  opacity: 0.8;
+}
+
+.submit-btn:active {
+  background-color: rgb(100, 75, 60);
+}
+
+@media (min-width: 500px) {
+  .contact-main {
+    width: 90%;
+  }
+
+  form {
+    padding: 2em 1.2em;
+  }
+
+  .form-input {
+    margin-block-end: 1.2em;
+  }
+
+  input,
+  textarea {
+    padding: 1.3em 0.6em;
+  }
+}
+
+@media (min-width: 769px) {
+  form {
+    padding: 2em 1.5em;
+  }
+
+  input,
+  textarea {
+    padding: 1.3em 0.8em;
+  }
+}
+
+@media (min-width: 900px) {
+  form {
+    max-width: 600px;
+    padding: 2em 1.7em;
+  }
+
+  .submit-btn {
+    width: 120px;
+  }
+}
